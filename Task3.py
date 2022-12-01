@@ -12,15 +12,15 @@ def diff_max_min(list_number:list):
     min_num=min(list_number)
 
     for i in list_number:
-        a=round(i-int(i),10)
-        if a>max_num:
-            max_num=a
+        fractional_part=round(i-int(i),10)
+        if fractional_part>max_num:
+            max_num=fractional_part
 
-        if a<min_num:
-            min_num=a
+        if fractional_part<min_num:
+            min_num=fractional_part
        
-    b=round(max_num-min_num,10)  
-    return b          
+    difference=round(max_num-min_num,10)  
+    return difference          
 
 list_number=(1.1,1.2,3.1,5.17,10.02)
 # list_number=(4.07,5.1,8.2444,6.9814)
